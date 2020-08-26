@@ -1,0 +1,8 @@
+.govuk-footer__inline-list {
+    li {
+        @extend .govuk-footer__inline-list-item;
+        a {
+            @extend .govuk-footer__link;
+        }
+    }
+}
