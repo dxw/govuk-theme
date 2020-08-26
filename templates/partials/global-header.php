@@ -17,6 +17,7 @@
             <a href="<?php echo esc_url(home_url()) ?>" class="govuk-header__link govuk-header__link--service-name">
                 <?php echo esc_html(get_bloginfo('description')) ?>
             </a>
+            <?php get_template_part('partials/navigation') ?>
         </div>
     </div>
   </header>

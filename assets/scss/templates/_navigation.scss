@@ -1,0 +1,11 @@
+.govuk-header__navigation {
+    .menu-item {
+        @extend .govuk-header__navigation-item;
+        a {
+            @extend .govuk-header__link;
+        }
+    }
+    .current-menu-item {
+        @extend .govuk-header__navigation-item--active;
+    }
+}
