@@ -18,7 +18,6 @@ $registrar->addInstance(\Dxw\GovukTheme\Theme\Scripts::class, new \Dxw\GovukThem
 $registrar->addInstance(\Dxw\GovukTheme\Theme\Media::class, new \Dxw\GovukTheme\Theme\Media());
 $registrar->addInstance(\Dxw\GovukTheme\Theme\Menus::class, new \Dxw\GovukTheme\Theme\Menus());
 $registrar->addInstance(\Dxw\GovukTheme\Theme\Widgets::class, new \Dxw\GovukTheme\Theme\Widgets());
-$registrar->addInstance(\Dxw\GovukTheme\Theme\Analytics::class, new \Dxw\GovukTheme\Theme\Analytics());
 $registrar->addInstance(\Dxw\GovukTheme\Theme\TitleTag::class, new \Dxw\GovukTheme\Theme\TitleTag());
 $registrar->addInstance(\Dxw\GovukTheme\Theme\Pagination::class, new \Dxw\GovukTheme\Theme\Pagination(
     $registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
