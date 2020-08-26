@@ -30,8 +30,6 @@ module.exports = function (grunt) {
         outputStyle: 'compressed',
         sourceMap: true,
         includePaths: [
-          require('bourbon').includePaths,
-          require('bourbon-neat').includePaths,
           require('node-normalize-scss').includePaths
         ]
       },
@@ -83,9 +81,17 @@ module.exports = function (grunt) {
 
     copy: {
       production: {
-        files: {
-          'static/lib/jquery.min.js': 'node_modules/jquery/dist/jquery.min.js'
-        }
+        files: [
+          {
+            expand: true,
+            cwd: 'node_modules/govuk-frontend/govuk/assets',
+            src: '**',
+            dest: 'static/lib/govuk-frontend/govuk/assets'
+          },
+          {
+            'static/lib/jquery.min.js': 'node_modules/jquery/dist/jquery.min.js'
+          }
+        ]
       }
     },
 

@@ -1,19 +1,3 @@
-@import "bourbon";
-@import "neat";
-@import "normalize";
+$govuk-assets-path: '/wp-content/themes/govuk-theme/static/lib/govuk-frontend/govuk/assets/';
 
-@import "helpers/colours";
-@import "helpers/mixins";
-
-@import "base/reset";
-@import "base/grid";
-@import "base/site";
-@import "base/typography";
-@import "base/forms";
-
-@import "templates/global-header";
-@import "templates/global-footer";
-@import "templates/archive";
-@import "templates/page";
-@import "templates/search";
-@import "templates/single";
+@import "node_modules/govuk-frontend/govuk/all";

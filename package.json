@@ -1,8 +1,7 @@
 {
   "dependencies": {
-    "bourbon": "^4.3.4",
-    "bourbon-neat": "^2.0.0",
     "calc-polyfill": "^0.1.0",
+    "govuk-frontend": "^3.8.1",
     "jquery": "^3.3.1",
     "node-normalize-scss": "^3.0.0"
   },

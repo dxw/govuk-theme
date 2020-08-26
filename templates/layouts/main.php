@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9 lt-ie10" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 9]>         <html class="no-js lt-ie10" <?php language_attributes(); ?>> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
+<html lang="en" class="govuk-template ">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/wp-content/themes/govuk-theme/static/lib/govuk-frontend/govuk/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/govuk-theme/static/lib/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/wp-content/themes/govuk-theme/static/lib/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/wp-content/themes/govuk-theme/static/lib/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" href="/wp-content/themes/govuk-theme/static/lib/govuk-frontend/govuk/assets/images/govuk-apple-touch-icon.png">
+
+    <meta property="og:image" content="/wp-content/themes/govuk-theme/static/lib/govuk-frontend/govuk/assets/images/govuk-opengraph-image.png">
 
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class('govuk-template__body'); ?>>
 
-    <!--[if lt IE 9]><div class="alert"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?></div><![endif]-->
+    <script>
+        document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+    </script>
 
     <?php get_template_part('partials/global-header'); ?>
 
-    <main class="main" role="main">
-        <?php h()->w_requested_template(); ?>
-    </main>
+    <div class="govuk-width-container ">
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+            <?php h()->w_requested_template(); ?>
+        </main>
+    </div>    
 
     <?php get_template_part('partials/global-footer'); ?>
 

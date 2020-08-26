@@ -442,16 +442,6 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bourbon-neat@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/bourbon-neat/-/bourbon-neat-2.1.0.tgz#b32ce101f447c35c57b6e833de74567f8b5f9082"
-  integrity sha512-zJn8gEIIM2001F08WvX8WJJ24+8P+3i4J2EoaY5ohu4nU5PBak37w8x5jvPdHpoOnj6LwYMdddFlYkM+TvTAlA==
-
-bourbon@^4.3.4:
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/bourbon/-/bourbon-4.3.4.tgz#4da380029e92c0c8f9764c779451a134b11e7cc3"
-  integrity sha1-TaOAAp6SwMj5dkx3lFGhNLEefMM=
-
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -2485,6 +2475,11 @@ got@^8.3.1:
     timed-out "^4.0.1"
     url-parse-lax "^3.0.0"
     url-to-options "^1.0.1"
+
+govuk-frontend@^3.8.1:
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/govuk-frontend/-/govuk-frontend-3.8.1.tgz#1a0456426174b798763429ea6cd06b32af986b8e"
+  integrity sha512-1995FVvBSnwizhJ63BHFzd7T8uoOLUKO6NOOT0fAOYE7bdl8Ncf6yC5n3TqiwCJ4lPMc/dCGkN9Z4QRJchwoYQ==
 
 graceful-fs@^4.1.10, graceful-fs@^4.1.11, graceful-fs@^4.1.2:
   version "4.2.4"
