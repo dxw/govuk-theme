@@ -1,0 +1,42 @@
+{
+    "name": "dxw/govuk-theme",
+    "homepage": "https://github.com/dxw/whippet-theme-template",
+    "type": "library",
+    "version": "0.1.1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Harry Metcalfe",
+            "email": "harry@dxw.com",
+            "homepage": "https://www.dxw.com/"
+        }
+    ],
+    "config": {
+      "platform": {
+        "php": "7.4.3"
+      }
+    },
+    "require-dev": {
+        "dxw/phar-install": "^1.0",
+        "10up/wp_mock": "^0.3.0",
+        "mikey179/vfsstream": "^1.6",
+        "peridot-php/peridot": "^1.19",
+        "peridot-php/leo": "^1.6",
+        "peridot-php/peridot-dot-reporter": "^1.0",
+        "dxw/php-cs-fixer-config": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dxw\\GovukTheme\\": "app/"
+        }
+    },
+    "scripts": {
+        "post-update-cmd": "vendor/bin/phar-install"
+    },
+    "require": {
+        "dxw/pagination": "^1.0",
+        "dxw/iguana": "^1.0",
+        "dxw/iguana-theme": "^1.0",
+        "dxw/iguana-extras": "^1.0"
+    }
+}

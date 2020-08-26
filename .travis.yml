@@ -1,0 +1,15 @@
+language: php
+sudo: false
+git:
+  submodules: false
+cache:
+  directories:
+    - vendor
+php:
+  - 7.2
+  - 7.4
+install:
+  - composer --no-interaction install
+script:
+  - vendor/bin/peridot spec
+  - vendor/bin/php-cs-fixer fix --dry-run -v --diff
