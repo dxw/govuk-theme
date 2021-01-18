@@ -26,8 +26,3 @@ $registrar->addInstance(\Dxw\GovukTheme\Theme\Pagination::class, new \Dxw\GovukT
 // Post types and additional fields
 $registrar->addInstance(\Dxw\GovukTheme\Posts\PostTypes::class, new \Dxw\GovukTheme\Posts\PostTypes());
 $registrar->addInstance(\Dxw\GovukTheme\Posts\CustomFields::class, new \Dxw\GovukTheme\Posts\CustomFields());
-
-// Plugin dependency check - pass in any required plugins
-$registrar->addInstance(\Dxw\GovukTheme\Theme\Plugins::class, new \Dxw\GovukTheme\Theme\Plugins([
-//    'advanced-custom-fields/acf.php', // Path to main plugin file
-]));
