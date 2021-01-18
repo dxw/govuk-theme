@@ -1,16 +1,18 @@
 <?php
 
+use Kahlan\Plugin\Double;
+
 describe(\Dxw\GovukTheme\Lib\Whippet\TemplateTags::class, function () {
     beforeEach(function () {
-        \WP_Mock::setUp();
-        $this->helpersMock = Mockery::mock(\Dxw\Iguana\Theme\Helpers::class);
+        $helpersMock = Double::instance(
+            ['extends'=> '\Dxw\Iguana\Theme\Helpers']
+        );
         $this->templateTags = new \Dxw\GovukTheme\Lib\Whippet\TemplateTags(
             $this->helpersMock
         );
     });
 
     afterEach(function () {
-        \WP_Mock::tearDown();
     });
 
     describe('->w_template_title()', function () {
