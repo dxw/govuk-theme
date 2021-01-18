@@ -18,12 +18,9 @@
     },
     "require-dev": {
         "dxw/phar-install": "^1.0",
-        "10up/wp_mock": "^0.3.0",
         "mikey179/vfsstream": "^1.6",
-        "peridot-php/peridot": "^1.19",
-        "peridot-php/leo": "^1.6",
-        "peridot-php/peridot-dot-reporter": "^1.0",
-        "dxw/php-cs-fixer-config": "^1.0"
+        "dxw/php-cs-fixer-config": "^1.0",
+        "kahlan/kahlan": "^4.7"
     },
     "autoload": {
         "psr-4": {
