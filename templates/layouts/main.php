@@ -29,9 +29,13 @@
     <?php get_template_part('partials/global-header'); ?>
 
     <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-width-container') ?>">
+
+        <?php get_template_part('partials/breadcrumb'); ?>
+
         <main class="<?php echo apply_filters('govuk_theme_class', 'govuk-main-wrapper') ?>" id="main-content" role="main">
             <?php h()->w_requested_template(); ?>
         </main>
+        
     </div>    
 
     <?php get_template_part('partials/global-footer'); ?>
