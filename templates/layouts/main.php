@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="govuk-template ">
+<html lang="en" class="<?php echo apply_filters('govuk_theme_class', 'govuk-template') ?>">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -24,12 +24,12 @@
         document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
     </script>
 
-    <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    <a href="#main-content" class="<?php echo apply_filters('govuk_theme_class', 'govuk-skip-link') ?>">Skip to main content</a>
 
     <?php get_template_part('partials/global-header'); ?>
 
-    <div class="govuk-width-container ">
-        <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-width-container') ?>">
+        <main class="<?php echo apply_filters('govuk_theme_class', 'govuk-main-wrapper') ?>" id="main-content" role="main">
             <?php h()->w_requested_template(); ?>
         </main>
     </div>    
