@@ -16,7 +16,7 @@ class WpHead implements \Dxw\Iguana\Registerable
         remove_action('wp_print_styles', 'print_emoji_styles');
         remove_action('admin_print_styles', 'print_emoji_styles');
         remove_action('admin_print_scripts', 'print_emoji_detection_script');
-        // Remove extra crap from wp_head
+        // Remove detritus from wp_head
         remove_action('wp_head', 'rsd_link');
         remove_action('wp_head', 'wp_generator');
         remove_action('wp_head', 'wlwmanifest_link');

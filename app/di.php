@@ -22,6 +22,7 @@ $registrar->addInstance(\Dxw\GovukTheme\Theme\TitleTag::class, new \Dxw\GovukThe
 $registrar->addInstance(\Dxw\GovukTheme\Theme\Pagination::class, new \Dxw\GovukTheme\Theme\Pagination(
     $registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
 ));
+$registrar->addInstance(new \Dxw\GovukTheme\Theme\WpHead());
 
 // Post types and additional fields
 $registrar->addInstance(\Dxw\GovukTheme\Posts\PostTypes::class, new \Dxw\GovukTheme\Posts\PostTypes());
