@@ -12,7 +12,6 @@
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-exorcise": "^2.1.1",
     "grunt-image": "^6.1.0",
     "grunt-modernizr": "^3.0.0",
     "grunt-sass": "^3.1.0",

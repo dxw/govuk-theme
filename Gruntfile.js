@@ -6,7 +6,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-standard')
   grunt.loadNpmTasks('grunt-modernizr')
   grunt.loadNpmTasks('grunt-browserify')
-  grunt.loadNpmTasks('grunt-exorcise')
   grunt.loadNpmTasks('grunt-contrib-copy')
   grunt.loadNpmTasks('grunt-contrib-clean')
   grunt.loadNpmTasks('grunt-image')
@@ -71,14 +70,6 @@ module.exports = function (grunt) {
       }
     },
 
-    exorcise: {
-      production: {
-        files: {
-          'static/main.min.js.map': 'static/main.min.js'
-        }
-      }
-    },
-
     copy: {
       production: {
         files: [
@@ -113,7 +104,7 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['assets/js/*.js', 'assets/js/*/*.js'],
-        tasks: ['standard', 'browserify', 'exorcise']
+        tasks: ['standard', 'browserify']
       }
     },
 
@@ -141,7 +132,6 @@ module.exports = function (grunt) {
     'standard',
     'copy',
     'browserify',
-    'exorcise',
     'modernizr'
   ])
 }
