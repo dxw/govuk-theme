@@ -28,14 +28,14 @@ describe(\Dxw\GovukTheme\Theme\Scripts::class, function () {
 
     describe('->getAssetPath()', function () {
         it('gets the path of the assets', function () {
-            allow('get_stylesheet_directory_uri')->toBeCalled()->andReturn('http://foo.bar.invalid/cat/dog');
+            allow('get_template_directory_uri')->toBeCalled()->andReturn('http://foo.bar.invalid/cat/dog');
             expect($this->scripts->getAssetPath('meow'))->toEqual('http://foo.bar.invalid/cat/static/meow');
         });
     });
 
     describe('->assetPath()', function () {
         it('echos the path of the assets', function () {
-            allow('get_stylesheet_directory_uri')->toBeCalled()->andReturn('http://foo.bar.invalid/cat/dog');
+            allow('get_template_directory_uri')->toBeCalled()->andReturn('http://foo.bar.invalid/cat/dog');
             ob_start();
             $this->scripts->assetPath('meow');
             $result = ob_get_contents();
@@ -46,7 +46,7 @@ describe(\Dxw\GovukTheme\Theme\Scripts::class, function () {
 
     describe('->wpEnqueueScripts()', function () {
         it('enqueues some of the JavaScript files', function () {
-            allow('get_stylesheet_directory_uri')->toBeCalled()->andReturn('http://a.invalid/zzz');
+            allow('get_template_directory_uri')->toBeCalled()->andReturn('http://a.invalid/zzz');
 
             allow('wp_deregister_script')->toBeCalled();
 
@@ -70,7 +70,7 @@ describe(\Dxw\GovukTheme\Theme\Scripts::class, function () {
 
     describe('->wpPrintScripts()', function () {
         it('prints some elements tags directly', function () {
-            allow('get_stylesheet_directory_uri')->toBeCalled()->andReturn('http://a.invalid/zzz');
+            allow('get_template_directory_uri')->toBeCalled()->andReturn('http://a.invalid/zzz');
             ob_start();
             $this->scripts->wpPrintScripts();
             $result = ob_get_contents();
