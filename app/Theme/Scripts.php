@@ -18,7 +18,7 @@ class Scripts implements \Dxw\Iguana\Registerable
 
     public function getAssetPath($path)
     {
-        return dirname(get_stylesheet_directory_uri()).'/static/'.$path;
+        return dirname(get_template_directory_uri()).'/static/'.$path;
     }
 
     public function assetPath($path)
