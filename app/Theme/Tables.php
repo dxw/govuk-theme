@@ -29,8 +29,6 @@ class Tables implements \Dxw\Iguana\Registerable
     private function getElementReplacements()
     {
         return [
-            '<figure class="wp-block-table">' => '',
-            '</figure>' => '',
             '<table>' => '<table class="' . apply_filters('govuk_theme_class', 'govuk-table') . '">',
             '<caption>' => '<caption class="' . apply_filters('govuk_theme_class', 'govuk-table__caption') . '">',
             '<thead>' => '<thead class="' . apply_filters('govuk_theme_class', 'govuk-table__head') . '">',
