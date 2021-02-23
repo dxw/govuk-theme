@@ -6,9 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.2.0] - 2021-02-23
+
 ### Added
 - Default table block receives govuk styling
 - Breadcrumbs
+- Customisable header & footer
+- `govuk_theme_class` filter wherever govuk- prefixed classes are applied
+
+### Removed
+- Comments template
+- Analytics class
+- Plugin dependency check class
+
+### Changed
+- Tests migrated from Peridot to Kahlan
+- HTML head output tidied
+- JS & CSS assets paths set via `get_template_directory_uri()`, so they'll work in child themes too
 
 ## [0.1.1] - 2020-05-26
 
