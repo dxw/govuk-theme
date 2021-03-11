@@ -20,7 +20,6 @@ describe(\Dxw\GovukTheme\Theme\Scripts::class, function () {
         it('registers nav scripts', function () {
             allow('add_action')->toBeCalled();
             expect('add_action')->toBeCalled()->once()->with('wp_enqueue_scripts', [$this->scripts, 'wpEnqueueScripts']);
-            expect('add_action')->toBeCalled()->once()->with('wp_print_scripts', [$this->scripts, 'wpPrintScripts']);
 
             $this->scripts->register();
         });
@@ -65,18 +64,6 @@ describe(\Dxw\GovukTheme\Theme\Scripts::class, function () {
             expect('wp_enqueue_style')->toBeCalled()->once()->with('main', 'http://a.invalid/static/main.min.css');
 
             $this->scripts->wpEnqueueScripts();
-        });
-    });
-
-    describe('->wpPrintScripts()', function () {
-        it('prints some elements tags directly', function () {
-            allow('get_template_directory_uri')->toBeCalled()->andReturn('http://a.invalid/zzz');
-            ob_start();
-            $this->scripts->wpPrintScripts();
-            $result = ob_get_contents();
-            ob_end_clean();
-            expect(preg_match_all("/<meta .*>/", $result))->toEqual(1);
-            expect(preg_match_all("/<link .*>/", $result))->toEqual(2);
         });
     });
 });

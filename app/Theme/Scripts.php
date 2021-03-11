@@ -13,7 +13,6 @@ class Scripts implements \Dxw\Iguana\Registerable
     public function register()
     {
         add_action('wp_enqueue_scripts', [$this, 'wpEnqueueScripts']);
-        add_action('wp_print_scripts', [$this, 'wpPrintScripts']);
     }
 
     public function getAssetPath($path)
@@ -49,16 +48,5 @@ class Scripts implements \Dxw\Iguana\Registerable
         wp_enqueue_script('main', $this->getAssetPath('main.min.js'), ['jquery', 'modernizr'], '', true);
 
         wp_enqueue_style('main', $this->getAssetPath('main.min.css'));
-    }
-
-    public function wpPrintScripts()
-    {
-        ?>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="apple-touch-icon-precomposed" href="<?php $this->assetPath('img/apple-touch-icon-precomposed.png') ?>">
-
-        <link rel="icon" type="image/png" href="<?php $this->assetPath('img/shortcut-icon.png') ?>">
-        <?php
     }
 }
