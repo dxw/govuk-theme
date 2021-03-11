@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.2.1] - 2021-03-11
+
+### Removed
+- Superfluous meta tag and favicons that were printed directly into the page head, and could not be over-written.
+
 ## [v0.2.0] - 2021-02-23
 
 ### Added
