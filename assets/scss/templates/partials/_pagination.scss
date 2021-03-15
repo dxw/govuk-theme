@@ -1,0 +1,17 @@
+.govuk-pagination__container {
+    display: flex;
+    justify-content: center;
+    ul {
+        @extend .govuk-list;
+        @include govuk-responsive-margin(5, "top");
+        @include govuk-responsive-margin(5, "bottom");
+        li {
+            display: block;
+            float: left;
+            @include govuk-responsive-margin(3, "right");
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
