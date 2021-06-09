@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- The layout template uses WordPress' `language_attributes()` function to generate its html `lang` attribute, rather than the attribute being hardcoded as `en`.
+
 ## [v0.3.0] - 2021-03-16
 
 ### Changed
