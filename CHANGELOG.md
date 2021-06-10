@@ -6,8 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- All hardcoded text is available for internationalization, using the 'govuk-theme' text domain
+
 ### Changed
 - The layout template uses WordPress' `language_attributes()` function to generate its html `lang` attribute, rather than the attribute being hardcoded as `en`.
+- Fixed missing closing bracket on "article" tag in the article-list-item partial.
 
 ## [v0.3.0] - 2021-03-16
 

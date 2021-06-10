@@ -24,7 +24,7 @@
         document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
     </script>
 
-    <a href="#main-content" class="<?php echo apply_filters('govuk_theme_class', 'govuk-skip-link') ?>">Skip to main content</a>
+    <a href="#main-content" class="<?php echo apply_filters('govuk_theme_class', 'govuk-skip-link') ?>"><?php _e('Skip to main content', 'govuk-theme') ?></a>
 
     <?php get_template_part('partials/global-header'); ?>
 
