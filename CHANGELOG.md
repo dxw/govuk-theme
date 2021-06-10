@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.4.0] - 2021-06-10
+
 ### Added
 - All hardcoded text is available for internationalization, using the 'govuk-theme' text domain
 
