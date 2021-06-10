@@ -1,4 +1,4 @@
-<article <?php post_class('article-list-item'); ?>
+<article <?php post_class('article-list-item'); ?>>
     <header>
         <h1><a class="<?php echo apply_filters('govuk_theme_class', 'govuk-link') ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
         <?php get_template_part('partials/entry-meta'); ?>
