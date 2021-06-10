@@ -8,7 +8,7 @@ $ancestors = array_reverse(get_post_ancestors($post->ID)); ?>
     <ol class="govuk-breadcrumbs__list">
         <?php if (!is_front_page()) : ?>
             <li class="govuk-breadcrumbs__list-item">
-                <a class="govuk-breadcrumbs__link" href="<?php echo get_site_url(); ?>">Home</a>
+                <a class="govuk-breadcrumbs__link" href="<?php echo get_site_url(); ?>"><?php _e('Home', 'govuk-theme') ?></a>
             </li>
             <?php foreach ($ancestors as $ancestor) : ?>
                 <li class="govuk-breadcrumbs__list-item">

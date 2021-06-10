@@ -9,6 +9,6 @@
             <?php the_post_thumbnail('large'); ?>
         <?php endif; ?>
         <?php the_excerpt(); ?>
-        <a href="<?php the_permalink(); ?>" class="<?php echo apply_filters('govuk_theme_class', 'govuk-link') ?>">Read more</a>
+        <a href="<?php the_permalink(); ?>" class="<?php echo apply_filters('govuk_theme_class', 'govuk-link') ?>"><?php _e('Read more', 'govuk-theme') ?></a>
     </div>
 </article>
