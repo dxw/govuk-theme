@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Moved `<head>` content to a partial, so it can be over-ridden in a child theme, without needing to over-ride the whole layout template.
+
 ## [v0.4.0] - 2021-06-10
 
 ### Added
