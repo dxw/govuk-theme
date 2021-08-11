@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.4.1] - 2021-08-11
+
 ### Changed
 - Migrated from node-sass to dart-sass
 - Moved `<head>` content to a partial, so it can be over-ridden in a child theme, without needing to over-ride the whole layout template.
