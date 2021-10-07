@@ -87,6 +87,9 @@ module.exports = function (grunt) {
     },
 
     image: {
+      options: {
+        svgo: ['--disable', 'removeViewBox', '--disable', 'removeUnknownsAndDefaults']
+      },
       dynamic: {
         files: [{
           expand: true,
