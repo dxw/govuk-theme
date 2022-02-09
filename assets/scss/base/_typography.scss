@@ -24,3 +24,6 @@ ol {
     @extend .govuk-list;
     @extend .govuk-list--number;
 }
+blockquote {
+    @extend .govuk-inset-text;
+}
