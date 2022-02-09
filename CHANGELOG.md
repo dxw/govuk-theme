@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - CI migrated from Travis to GitHub actions
 - Make base typography apply across the theme more generically
+- Adds `blockquote` styling which inherits the `.govuk-inset-text` class
 
 ## [v0.4.1] - 2021-08-11
 
