@@ -1,0 +1,55 @@
+name: Theme
+
+on: push
+
+jobs:
+  kahlan:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        php-versions: ['7.4']
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+      - name: Get Composer Cache Directory
+        id: composer-cache
+        run: |
+          echo "::set-output name=dir::$(composer config cache-files-dir)"
+      - uses: actions/cache@v2
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-
+      - name: Install dependencies
+        run: composer install --no-interaction
+      - name: Run Kahlan tests
+        run: vendor/bin/kahlan
+  php-cs-fixer:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        php-versions: ['7.4']
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+      - name: Get Composer Cache Directory
+        id: composer-cache
+        run: |
+          echo "::set-output name=dir::$(composer config cache-files-dir)"
+      - uses: actions/cache@v2
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-composer-
+      - name: Install dependencies
+        run: composer install --no-interaction
+      - name: PHP CS fix
+        run: vendor/bin/php-cs-fixer fix --dry-run -v --diff
