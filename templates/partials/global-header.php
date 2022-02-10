@@ -14,9 +14,16 @@
             </a>
         </div>
         <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__content') ?>">
-            <a href="<?php echo esc_url(home_url()) ?>" class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__link govuk-header__link--service-name') ?>">
-                <?php echo esc_html(get_bloginfo('description')) ?>
-            </a>
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <a href="<?php echo esc_url(home_url()) ?>" class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__link govuk-header__link--service-name') ?>">
+                        <?php echo esc_html(get_bloginfo('description')) ?>
+                    </a>
+                </div>
+                <div class="govuk-grid-column-one-third">
+                    <?php get_template_part('partials/search-form') ?>
+                </div>
+            </div>
             <?php get_template_part('partials/navigation') ?>
         </div>
     </div>
