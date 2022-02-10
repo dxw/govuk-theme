@@ -21,6 +21,12 @@ describe(\Dxw\GovukTheme\Theme\Scripts::class, function () {
             allow('add_action')->toBeCalled();
             expect('add_action')->toBeCalled()->once()->with('wp_enqueue_scripts', [$this->scripts, 'wpEnqueueScripts']);
 
+            allow('add_theme_support')->toBeCalled();
+            expect('add_theme_support')->toBeCalled()->once()->with('editor-styles');
+
+            allow('add_editor_style')->toBeCalled();
+            expect('add_editor_style')->toBeCalled()->once()->with('../static/editor.min.css');
+
             $this->scripts->register();
         });
     });
