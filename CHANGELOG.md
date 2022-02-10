@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Search form in header nav
+- Search results template
 - Grunt task option to retain accessible attributes for SVGs when compiled
 
 ### Changed
