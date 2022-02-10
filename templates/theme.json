@@ -63,6 +63,13 @@
           "size": "3rem"
         }
       ]
+    },
+    "blocks": {
+      "core/button": {
+        "border": {
+          "radius": false
+        }
+      }
     }
   }
 }
