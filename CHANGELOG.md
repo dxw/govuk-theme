@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Grunt task option to retain accessible attributes for SVGs when compiled
 - theme.json file
 - Block editor SASS files
+- Block editor JS files
 
 ### Changed
 - CI migrated from Travis to GitHub actions
