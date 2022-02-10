@@ -1,7 +1,7 @@
 <div class="search-form__wrapper">
     <form class="search-form" role="search" method="get" action="<?php echo home_url('/'); ?>">
 
-        <input type="search" value="<?php echo is_search() ? get_search_query() : '' ?>" name="s" id="site-search" class="govuk-input search-form__input" placeholder="<?php _e('Search on ', 'govuk-theme'); ?><?php bloginfo('name'); ?>">
+        <input type="search" value="<?php echo is_search() ? get_search_query() : '' ?>" name="s" id="site-search" class="govuk-input search-form__input" placeholder="<?php _e('Search', 'govuk-theme'); ?>">
 
         <label class="govuk-visually-hidden" for="site-search"><?php _e('Search on ', 'govuk-theme'); ?> <?php bloginfo('name'); ?></label>
 
