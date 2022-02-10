@@ -1,0 +1,68 @@
+{
+  "version": 2,
+  "settings": {
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultPalette": false,
+      "gradients": {},
+      "link": false,
+      "palette": [
+        {
+          "name": "Black",
+          "slug": "black",
+          "color": "#000"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "#fff"
+        },
+        {
+          "name": "Light Grey",
+          "slug": "light-grey",
+          "color": "#b1b4b6"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "960px",
+      "wideSize": "1360px"
+    },
+    "typography": {
+      "customFontSize": false,
+      "lineHeight": true,
+      "dropCap": false,
+      "letterSpacing": false,
+      "fontWeight": false,
+      "fontSizes": [
+        {
+          "name": "Small",
+          "slug": "normal",
+          "size": "1rem"
+        },
+        {
+          "name": "Normal",
+          "slug": "normal",
+          "size": "1.1875rem"
+        },
+        {
+          "name": "Medium",
+          "slug": "medium",
+          "size": "1.5rem"
+        },
+        {
+          "name": "Large",
+          "slug": "large",
+          "size": "2rem"
+        },
+        {
+          "name": "Huge",
+          "slug": "huge",
+          "size": "3rem"
+        }
+      ]
+    }
+  }
+}
