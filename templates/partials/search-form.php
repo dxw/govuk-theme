@@ -1,5 +1,5 @@
 <div class="search-form__wrapper">
-    <form class="search-form" role="search" method="get" action="<?php echo home_url('/'); ?>">
+    <form class="search-form" role="search" method="get" action="<?php echo home_url('/'); ?>" aria-label="search-form">
 
         <input type="search" value="<?php echo is_search() ? get_search_query() : '' ?>" name="s" id="site-search" class="<?php echo apply_filters('govuk_theme_class', 'govuk-input search-form__input'); ?>" placeholder="<?php _e('Search', 'govuk-theme'); ?>">
 
