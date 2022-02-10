@@ -69,9 +69,14 @@ module.exports = function (grunt) {
         }
       },
       production: {
-        files: {
-          'static/main.min.js': 'assets/js/main.js'
-        }
+        files: [
+          {
+            'static/main.min.js': 'assets/js/main.js'
+          },
+          {
+            'static/editor.min.js': 'assets/js/editor.js'
+          }
+        ]
       }
     },
 

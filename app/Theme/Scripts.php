@@ -13,6 +13,7 @@ class Scripts implements \Dxw\Iguana\Registerable
     public function register()
     {
         add_action('wp_enqueue_scripts', [$this, 'wpEnqueueScripts']);
+        add_action('enqueue_block_editor_assets', [$this, 'wpEnqueueEditorScripts']);
         add_theme_support('editor-styles');
         add_editor_style('../static/editor.min.css');
     }
@@ -50,5 +51,10 @@ class Scripts implements \Dxw\Iguana\Registerable
         wp_enqueue_script('main', $this->getAssetPath('main.min.js'), ['jquery', 'modernizr'], '', true);
 
         wp_enqueue_style('main', $this->getAssetPath('main.min.css'));
+    }
+
+    public function wpEnqueueEditorScripts()
+    {
+        wp_enqueue_script('theme-editor', $this->getAssetPath('editor.min.js'), ['wp-blocks', 'wp-dom'], filemtime(get_stylesheet_directory() . '/../assets/js/editor.js'), true);
     }
 }

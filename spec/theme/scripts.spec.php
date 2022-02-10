@@ -19,7 +19,9 @@ describe(\Dxw\GovukTheme\Theme\Scripts::class, function () {
     describe('->register()', function () {
         it('registers nav scripts', function () {
             allow('add_action')->toBeCalled();
+            expect('add_action')->toBeCalled()->times(2);
             expect('add_action')->toBeCalled()->once()->with('wp_enqueue_scripts', [$this->scripts, 'wpEnqueueScripts']);
+            expect('add_action')->toBeCalled()->once()->with('enqueue_block_editor_assets', [$this->scripts, 'wpEnqueueEditorScripts']);
 
             allow('add_theme_support')->toBeCalled();
             expect('add_theme_support')->toBeCalled()->once()->with('editor-styles');
@@ -70,6 +72,19 @@ describe(\Dxw\GovukTheme\Theme\Scripts::class, function () {
             expect('wp_enqueue_style')->toBeCalled()->once()->with('main', 'http://a.invalid/static/main.min.css');
 
             $this->scripts->wpEnqueueScripts();
+        });
+
+        describe('->wpEnqueueEditorScripts()', function () {
+            it('enqueues assets for the editor', function () {
+                allow('get_template_directory_uri')->toBeCalled()->with()->andReturn('http://a.invalid/zzz');
+                allow('get_stylesheet_directory')->toBeCalled()->with()->andReturn('http://a.invalid/zzz');
+                allow('filemtime')->toBeCalled()->andReturn('1615926129');
+                allow('wp_enqueue_script')->toBeCalled();
+                expect('wp_enqueue_script')->toBeCalled()->once();
+                expect('wp_enqueue_script')->toBeCalled()->with('theme-editor', 'http://a.invalid/static/editor.min.js', ['wp-blocks', 'wp-dom'], '1615926129', true);
+
+                $this->scripts->wpEnqueueEditorScripts();
+            });
         });
     });
 });

@@ -25,3 +25,6 @@ $registrar->addInstance(new \Dxw\GovukTheme\Theme\WpHead());
 // Post types and additional fields
 $registrar->addInstance(new \Dxw\GovukTheme\Posts\PostTypes());
 $registrar->addInstance(new \Dxw\GovukTheme\Posts\CustomFields());
+
+// Blocks
+$registrar->addInstance(new \Dxw\GovukTheme\Blocks\BlockEditor());
