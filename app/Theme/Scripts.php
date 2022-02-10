@@ -13,6 +13,8 @@ class Scripts implements \Dxw\Iguana\Registerable
     public function register()
     {
         add_action('wp_enqueue_scripts', [$this, 'wpEnqueueScripts']);
+        add_theme_support('editor-styles');
+        add_editor_style('../static/editor.min.css');
     }
 
     public function getAssetPath($path)
