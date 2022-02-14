@@ -1,4 +1,69 @@
 $govuk-assets-path: '/wp-content/themes/govuk-theme/static/lib/govuk-frontend/govuk/assets/';
 
+/*--------------------------------------------------------------
+ # Settings
+
+ Define our global preprocessor variables and CSS custom 
+ properties.
+--------------------------------------------------------------*/
+@import 'settings/settings';
+
+
+/*--------------------------------------------------------------
+ # Helpers
+
+ Functions and mixins.
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ # GOV.UK Frontend
+
+ Use the framework's starter styles and make helper mixins and 
+ functions available.
+--------------------------------------------------------------*/
 @import "node_modules/govuk-frontend/govuk/all";
-@import "base/typography";
+
+
+/*--------------------------------------------------------------
+ # Core
+
+ Let's make use of the "C" in CSS; "Cascading" styles. With a 
+ relatively small amount of CSS we can reach a whole load of 
+ elements, no matter where they are situated. The markup need not 
+ be touched to give us a solid system from the outset.
+
+ Unlike when using classes, element selectors can target the 
+ arbitrary, unattributed content produced by WYSIWYG editors.
+--------------------------------------------------------------*/
+@import "core/forms";
+@import "core/reset";
+@import "core/typography";
+
+
+/*--------------------------------------------------------------
+ # Layout objects
+
+ These classes are all layout objects that don't impose any visual 
+ styles other than postioning and moving things around.
+--------------------------------------------------------------*/
+@import "objects/grid";
+
+
+/*--------------------------------------------------------------
+ # Components
+
+ Class-based styles can be adhered to on any HTML element, 
+ anywhere in a document. They are more portable and composable
+ than element styles, but require the author to affect the 
+ markup directly.
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+ # Overrides
+
+ These classes are for final adjustments, and should not be 
+ overridden by anything that comes before them.
+--------------------------------------------------------------*/
+@import "overrides/block-editor";
