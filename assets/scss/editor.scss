@@ -26,7 +26,7 @@ $govuk-assets-path: '/wp-content/themes/govuk-theme/static/lib/govuk-frontend/go
  Use the framework's starter styles and make helper mixins and 
  functions available.
 --------------------------------------------------------------*/
-@import "node_modules/govuk-frontend/govuk/all";
+@import "govuk-frontend/govuk/all";
 
 
 /*--------------------------------------------------------------

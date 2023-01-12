@@ -22,6 +22,7 @@
   },
   "scripts": {
     "clean": "del ./static/*",
-    "images": "imagemin assets/img/* --out-dir=static/img/"
+    "images": "imagemin assets/img/* --out-dir=static/img/",
+    "scss": "sass assets/scss/main.scss:static/main.min.css assets/scss/editor.scss:static/editor.min.css --load-path=node_modules --style=compressed"
   }
 }
