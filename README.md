@@ -9,14 +9,14 @@ Currently, the theme applies v3 of GOV.UK Frontend.
 Install the dependencies:
 
 ```
-yarn install
+npm install
 composer install
 ```
 
 Compile the assets:
 
 ```
-yarn run grunt
+npm run build
 ```
 
 Run the tests:

@@ -1,9 +1,71 @@
-/node_modules
-/.grunt
-/.npm-debug.log
-/vendor
-/.sass-cache
-/static/**/*.map
-/static/img/**/*.bak
-/.php_cs.cache
-/.idea/
+## IMPORTANT ##
+#
+# Usually a pattern here also belongs in your `.dockerignore` file and vice
+# versa.
+# Note that Docker's ignore syntax is slightly different to Git's. The main
+# difference is that Git interprets patterns without a leading slash as applying
+# to any subdirectory, while Docker interprets them as relative to the project
+# root directory. To resolve that, a `.dockerignore` should prefix those
+# patterns with `**/`. This is also compatible with Git.
+## How to use this file
+# Add patterns to the section they apply to, sorted by:
+#   1. absolute paths to or patterns for files (with a `/` prefix)
+#   2. absolute paths to or patterns for directories
+#   3. relative paths to or patterns for files (without a `/` prefix)
+#   4. relative paths to or patterns for directories
+#   5. pattern exceptions (sorted as above)
+# Sort them alphanumerically within each section.
+# If no section fits, create one. No path or pattern should exist without a
+# section or label.
+
+## Sensitive files
+# To override these ignored files on a case-by-case basis,
+# instead of adding a rule to this file, force add them:
+# ```
+# git add path/to/file --force
+# This reduces the risk of accidentally committing files that happen to match
+# the ignore pattern exception, or a file being removed and readded
+# unintentionally in the future.
+### Databases
+*.db*
+*.dump*
+*.sql*
+*.sqlite3*
+### Environment variables
+.env
+.env.*
+### Logs
+*.log*
+### Secrets and keys
+*.crt*
+*.key*
+*.pem*
+### Spreadsheet data
+*.bks*
+*.csv*
+*.dex*
+*.numbers*
+*.ods*
+*.ots*
+*.tsv*
+*.xlr*
+*.xls*
+### Terraform
+.terraformrc*
+terraform.rc*
+*.tfstate*
+*.tfvars*
+.terraform/
+### XML data
+*.xml*
+## Dependencies
+node_modules/
+vendor/
+## WordPress media
+/wp-content/uploads
+## Temporary files
+tmp/
+## Build artifacts
+.php_cs.cache
+.sass-cache/
+*.bak*

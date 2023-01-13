@@ -6,16 +6,25 @@
     "node-normalize-scss": "^3.0.0"
   },
   "devDependencies": {
-    "grunt": "^1.5.3",
-    "grunt-browserify": "^6.0.0",
-    "grunt-cli": "^1.3.2",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-image": "^6.1.0",
-    "grunt-modernizr": "^3.0.0",
-    "grunt-sass": "^3.1.0",
-    "grunt-standard": "^3.2.0",
-    "sass": "^1.37.0"
+    "browserify": "^17.0.0",
+    "cpy-cli": "^4.2.0",
+    "del-cli": "^5.0.0",
+    "imagemin-cli": "^7.0.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.37.0",
+    "standard": "^17.0.0",
+    "watchify": "^4.0.0"
+  },
+  "scripts": {
+    "browserify": "browserify assets/js/main.js > static/main.min.js --debug && browserify assets/js/editor.js > static/editor.min.js --debug",
+    "clean": "del ./static/*",
+    "copy": "cpy govuk-frontend/govuk/assets ../static/lib --cwd=node_modules && cpy jquery.min.js ../../../static/lib/ --cwd=node_modules/jquery/dist",
+    "images": "imagemin assets/img/* --out-dir=static/img/",
+    "scss": "sass assets/scss/main.scss:static/main.min.css assets/scss/editor.scss:static/editor.min.css --load-path=node_modules --style=compressed",
+    "standard": "standard assets/js/main.js",
+    "build": "npm-run-all clean images scss standard copy browserify",
+    "watch:browserify": "watchify assets/js/main.js -o static/main.min.js --debug && watchify assets/js/editor.js -o static/editor.min.js --debug",
+    "watch:scss": "npm run scss -- -w",
+    "watch": "npm run build && npm-run-all -p watch:*"
   }
 }

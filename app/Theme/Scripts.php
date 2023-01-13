@@ -44,11 +44,8 @@ class Scripts implements \Dxw\Iguana\Registerable
         wp_deregister_script('jquery');
         wp_enqueue_script('jquery', $this->getAssetPath('lib/jquery.min.js'));
 
-        // Because it's awesome
-        wp_enqueue_script('modernizr', $this->getAssetPath('lib/modernizr.min.js'));
-
         // Pretty much everything else should be compiled by Grunt.
-        wp_enqueue_script('main', $this->getAssetPath('main.min.js'), ['jquery', 'modernizr'], '', true);
+        wp_enqueue_script('main', $this->getAssetPath('main.min.js'), ['jquery'], '', true);
 
         wp_enqueue_style('main', $this->getAssetPath('main.min.css'));
     }
