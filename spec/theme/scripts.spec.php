@@ -63,9 +63,7 @@ describe(\Dxw\GovukTheme\Theme\Scripts::class, function () {
 
             expect('wp_enqueue_script')->toBeCalled()->once()->with('jquery', 'http://a.invalid/static/lib/jquery.min.js');
 
-            expect('wp_enqueue_script')->toBeCalled()->once()->with('modernizr', 'http://a.invalid/static/lib/modernizr.min.js');
-
-            expect('wp_enqueue_script')->toBeCalled()->once()->with('main', 'http://a.invalid/static/main.min.js', ['jquery', 'modernizr'], '', true);
+            expect('wp_enqueue_script')->toBeCalled()->once()->with('main', 'http://a.invalid/static/main.min.js', ['jquery'], '', true);
 
             allow('wp_enqueue_style')->toBeCalled();
 
