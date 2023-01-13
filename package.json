@@ -6,6 +6,7 @@
     "node-normalize-scss": "^3.0.0"
   },
   "devDependencies": {
+    "browserify": "^17.0.0",
     "cpy-cli": "^4.2.0",
     "del-cli": "^5.0.0",
     "grunt": "^1.5.3",
@@ -23,6 +24,7 @@
     "standard": "^17.0.0"
   },
   "scripts": {
+    "browserify": "browserify assets/js/main.js > static/main.min.js --debug && browserify assets/js/editor.js > static/editor.min.js --debug",
     "clean": "del ./static/*",
     "copy": "cpy govuk-frontend/govuk/assets ../static/lib --cwd=node_modules && cpy jquery.min.js ../../../static/lib/ --cwd=node_modules/jquery/dist",
     "images": "imagemin assets/img/* --out-dir=static/img/",
