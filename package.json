@@ -20,6 +20,7 @@
     "grunt-sass": "^3.1.0",
     "grunt-standard": "^3.2.0",
     "imagemin-cli": "^7.0.0",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.37.0",
     "standard": "^17.0.0"
   },
@@ -29,6 +30,7 @@
     "copy": "cpy govuk-frontend/govuk/assets ../static/lib --cwd=node_modules && cpy jquery.min.js ../../../static/lib/ --cwd=node_modules/jquery/dist",
     "images": "imagemin assets/img/* --out-dir=static/img/",
     "scss": "sass assets/scss/main.scss:static/main.min.css assets/scss/editor.scss:static/editor.min.css --load-path=node_modules --style=compressed",
-    "standard": "standard assets/js/main.js"
+    "standard": "standard assets/js/main.js",
+    "build": "npm-run-all clean images scss standard copy browserify"
   }
 }
