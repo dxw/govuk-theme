@@ -18,11 +18,13 @@
     "grunt-sass": "^3.1.0",
     "grunt-standard": "^3.2.0",
     "imagemin-cli": "^7.0.0",
-    "sass": "^1.37.0"
+    "sass": "^1.37.0",
+    "standard": "^17.0.0"
   },
   "scripts": {
     "clean": "del ./static/*",
     "images": "imagemin assets/img/* --out-dir=static/img/",
-    "scss": "sass assets/scss/main.scss:static/main.min.css assets/scss/editor.scss:static/editor.min.css --load-path=node_modules --style=compressed"
+    "scss": "sass assets/scss/main.scss:static/main.min.css assets/scss/editor.scss:static/editor.min.css --load-path=node_modules --style=compressed",
+    "standard": "standard assets/js/main.js"
   }
 }
