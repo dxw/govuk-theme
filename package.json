@@ -6,6 +6,7 @@
     "node-normalize-scss": "^3.0.0"
   },
   "devDependencies": {
+    "cpy-cli": "^4.2.0",
     "del-cli": "^5.0.0",
     "grunt": "^1.5.3",
     "grunt-browserify": "^6.0.0",
@@ -23,6 +24,7 @@
   },
   "scripts": {
     "clean": "del ./static/*",
+    "copy": "cpy govuk-frontend/govuk/assets ../static/lib --cwd=node_modules && cpy jquery.min.js ../../../static/lib/ --cwd=node_modules/jquery/dist",
     "images": "imagemin assets/img/* --out-dir=static/img/",
     "scss": "sass assets/scss/main.scss:static/main.min.css assets/scss/editor.scss:static/editor.min.css --load-path=node_modules --style=compressed",
     "standard": "standard assets/js/main.js"
