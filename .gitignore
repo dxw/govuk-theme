@@ -66,6 +66,7 @@ vendor/
 ## Temporary files
 tmp/
 ## Build artifacts
-.php_cs.cache
 .sass-cache/
 *.bak*
+/.php-cs-fixer.cache
+/composer.lock

@@ -2,18 +2,18 @@
 
 $registrar->addInstance(new \Dxw\Iguana\Theme\Helpers());
 $registrar->addInstance(new \Dxw\Iguana\Theme\LayoutRegister(
-    $registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
+	$registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
 ));
 $registrar->addInstance(new \Dxw\Iguana\Extras\UseAtom());
 
 // Libraries and support code
 $registrar->addInstance(new \Dxw\GovukTheme\Lib\Whippet\TemplateTags(
-    $registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
+	$registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
 ));
 
 // Theme behaviour, media, assets and template tags
 $registrar->addInstance(new \Dxw\GovukTheme\Theme\Scripts(
-    $registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
+	$registrar->getInstance(\Dxw\Iguana\Theme\Helpers::class)
 ));
 $registrar->addInstance(new \Dxw\GovukTheme\Theme\Media());
 $registrar->addInstance(new \Dxw\GovukTheme\Theme\Menus());
