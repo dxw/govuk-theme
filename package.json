@@ -2,8 +2,7 @@
   "dependencies": {
     "calc-polyfill": "^0.1.0",
     "govuk-frontend": "^3.8.1",
-    "jquery": "^3.3.1",
-    "node-normalize-scss": "^3.0.0"
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
