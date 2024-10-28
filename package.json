@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "calc-polyfill": "^0.1.0",
     "govuk-frontend": "^3.8.1"
   },
   "devDependencies": {
