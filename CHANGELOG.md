@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - Unused `node-normalize-scss` package.
+- Theme registration of jQuery.
+- Polyfill for CSS `calc()`.
 
 ## [v0.5.1] - 2024-08-08
 
