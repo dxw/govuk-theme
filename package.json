@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "calc-polyfill": "^0.1.0",
-    "govuk-frontend": "^3.8.1",
-    "jquery": "^3.3.1"
+    "govuk-frontend": "^3.8.1"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
@@ -17,7 +15,7 @@
   "scripts": {
     "browserify": "browserify assets/js/main.js > static/main.min.js --debug && browserify assets/js/editor.js > static/editor.min.js --debug",
     "clean": "del ./static/*",
-    "copy": "cpy govuk-frontend/govuk/assets ../../static/lib --cwd=node_modules && cpy jquery.min.js ../../../../../../static/lib/ --cwd=node_modules/jquery/dist",
+    "copy": "cpy govuk-frontend/govuk/assets ../../static/lib --cwd=node_modules",
     "images": "imagemin assets/img/* --out-dir=static/img/",
     "scss": "sass assets/scss/main.scss:static/main.min.css assets/scss/editor.scss:static/editor.min.css --load-path=node_modules --style=compressed",
     "standard": "standard assets/js/main.js",

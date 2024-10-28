@@ -55,13 +55,7 @@ describe(\Dxw\GovukTheme\Theme\Scripts::class, function () {
         it('enqueues some of the JavaScript files', function () {
             allow('get_template_directory_uri')->toBeCalled()->andReturn('http://a.invalid/zzz');
 
-            allow('wp_deregister_script')->toBeCalled();
-
-            expect('wp_deregister_script')->toBeCalled()->once()->with('jquery');
-
             allow('wp_enqueue_script')->toBeCalled();
-
-            expect('wp_enqueue_script')->toBeCalled()->once()->with('jquery', 'http://a.invalid/static/lib/jquery.min.js');
 
             expect('wp_enqueue_script')->toBeCalled()->once()->with('main', 'http://a.invalid/static/main.min.js', ['jquery'], '', true);
 

@@ -38,12 +38,6 @@ class Scripts implements \Dxw\Iguana\Registerable
         // You can/should enqueue a script here only if it is a widely used library that is required by a plugin (or is likely to be later)
         //
 
-        // We need to register our own jQuery, because WP is on jQuery 2.x which breaks support for IE 6-8.
-        // This will not affect admin pages
-        // This will break any plugin that requires a feature/behaviour in jQuery 2.x which is missing/different in jQuery 1.10.x
-        wp_deregister_script('jquery');
-        wp_enqueue_script('jquery', $this->getAssetPath('lib/jquery.min.js'));
-
         // Pretty much everything else should be compiled by Grunt.
         wp_enqueue_script('main', $this->getAssetPath('main.min.js'), ['jquery'], '', true);
 
