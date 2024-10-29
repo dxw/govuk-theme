@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 ### Changed
+- Update `govuk-frontend` to latest version; v5.7.1.
 - Update `cpy-cli` to latest major version; v5.
 - Update `del-cli` to latest major version; v6.
 - Update `imagemin-cli` to latest major version; v8.
