@@ -15,7 +15,7 @@
   "scripts": {
     "browserify": "browserify assets/js/main.js > static/main.min.js --debug && browserify assets/js/editor.js > static/editor.min.js --debug",
     "clean": "del ./static/*",
-    "copy": "cpy govuk-frontend/govuk/assets ../../static/lib --cwd=node_modules",
+    "copy": "cpy govuk-frontend/dist/govuk/assets ../../static/lib --cwd=node_modules",
     "images": "imagemin assets/img/* --out-dir=static/img/",
     "scss": "sass assets/scss/main.scss:static/main.min.css assets/scss/editor.scss:static/editor.min.css --load-path=node_modules --style=compressed",
     "standard": "standard assets/js/main.js",
