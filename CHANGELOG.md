@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 ### Changed
+- Update favicons and align markup with [govuk-frontend recommendations](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#check-your-favicons-app-icons-and-opengraph-image-still-work).
 - Import govuk-frontend assets and Sass partials, from [updated location](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#update-package-file-paths-for-sass).
 - Update `govuk-frontend` to latest version; v5.7.1.
 - Update `cpy-cli` to latest major version; v5.
