@@ -6,9 +6,7 @@
 </head>
 <body <?php body_class('govuk-template__body'); ?>>
 
-    <script>
-        document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
-    </script>
+    <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
 
     <a href="#main-content" class="<?php echo apply_filters('govuk_theme_class', 'govuk-skip-link') ?>"><?php _e('Skip to main content', 'govuk-theme') ?></a>
 
