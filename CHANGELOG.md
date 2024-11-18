@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 ### Changed
+- Update the `<script>` snippet that appends classes to `<body>`, [to initiate `govuk-frontend` JS](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#update-the-script-snippet-at-the-top-of-your-body-tag).
 - Replace logo in site header, with Tudor crown.
 - Update copyright logo in site footer.
 - Update favicons and align markup with [govuk-frontend recommendations](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#check-your-favicons-app-icons-and-opengraph-image-still-work).
