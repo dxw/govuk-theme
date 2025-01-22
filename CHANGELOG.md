@@ -22,6 +22,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Theme registration of jQuery.
 - Polyfill for CSS `calc()`.
 
+## [v0.5.2] - 2025-01-22
+
+### Removed
+- Empty sass files
+
 ## [v0.5.1] - 2024-08-08
 
 ### Changed
