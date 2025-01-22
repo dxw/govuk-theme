@@ -40,8 +40,6 @@ $govuk-assets-path: '/wp-content/themes/govuk-theme/static/lib/govuk-frontend/di
  Unlike when using classes, element selectors can target the
  arbitrary, unattributed content produced by WYSIWYG editors.
 --------------------------------------------------------------*/
-@import "core/forms";
-@import "core/reset";
 @import "core/typography";
 
 
@@ -51,7 +49,6 @@ $govuk-assets-path: '/wp-content/themes/govuk-theme/static/lib/govuk-frontend/di
  These classes are all layout objects that don't impose any visual
  styles other than postioning and moving things around.
 --------------------------------------------------------------*/
-@import "objects/grid";
 
 
 /*--------------------------------------------------------------
