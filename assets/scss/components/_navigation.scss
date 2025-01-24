@@ -1,4 +1,7 @@
 .govuk-header__navigation {
+    @media (max-width: 768px) {
+        margin-bottom: 0px;
+    }
     .menu-item {
         @extend .govuk-header__navigation-item;
         a {
