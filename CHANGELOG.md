@@ -101,3 +101,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 # [Earlier Releases]
 
 Releases before `0.1.1` predate this changelog.
+
+# [Unreleases]
+### Added
+- nav HTML element and aria-label to `govuk-breadcrumbs`
+
