@@ -22,6 +22,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Theme registration of jQuery.
 - Polyfill for CSS `calc()`.
 
+## [v0.5.3] - 2025-01-22
+
+### Added
+- Media query to _navigation to set `margin-bottom: 10px` for media viewports less than 769px.
+
 ## [v0.5.1] - 2024-08-08
 
 ### Changed
