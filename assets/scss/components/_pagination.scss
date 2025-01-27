@@ -17,25 +17,7 @@
     
 }
 
-.govuk-main-wrapper {
-    display: block;
-        @include govuk-responsive-padding(6, "top");
-        @include govuk-responsive-padding(6, "bottom");
-
-    article {
-        @include govuk-responsive-padding(6, "bottom");
-
-    }
-
-    @include govuk-media-query($from: tablet) {
-        @include govuk-responsive-padding(7, "top");
-        @include govuk-responsive-padding(7, "bottom");
-        article {
-            @include govuk-responsive-padding(6, "bottom");
-    
-        }
-    } 
-}   
+  
 
 
 
