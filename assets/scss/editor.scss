@@ -27,6 +27,7 @@ $govuk-assets-path: '/wp-content/themes/govuk-theme/static/lib/govuk-frontend/di
  functions available.
 --------------------------------------------------------------*/
 @import "govuk-frontend/dist/govuk/all";
+@import "components/pagination" ;
 
 
 /*--------------------------------------------------------------
