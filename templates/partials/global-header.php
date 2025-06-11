@@ -23,7 +23,7 @@
         <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__content') ?>">
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <a href="<?php echo esc_url(home_url()) ?>" class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__link govuk-header__link--service-name') ?>">
+                    <a href="<?php echo esc_url(home_url()) ?>" class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__link govuk-header__service-name') ?>">
                         <?php echo esc_html(get_bloginfo('description')) ?>
                     </a>
                 </div>
