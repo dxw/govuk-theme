@@ -4,7 +4,7 @@ on: push
 
 jobs:
   kahlan:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         php-versions: ['7.4']
@@ -29,7 +29,7 @@ jobs:
       - name: Run Kahlan tests
         run: vendor/bin/kahlan
   php-cs-fixer:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         php-versions: ['7.4']
