@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 ### Changed
+- Enable updated typography scale feature from govuk-frontend, as per [`govuk-frontend` recommendations](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#weve-adjusted-our-responsive-type-scale)
 - Update the `<script>` snippet that appends classes to `<body>`, [to initiate `govuk-frontend` JS](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#update-the-script-snippet-at-the-top-of-your-body-tag).
 - Replace logo in site header, with Tudor crown.
 - Update copyright logo in site footer.
