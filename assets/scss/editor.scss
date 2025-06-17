@@ -27,7 +27,7 @@ $govuk-new-typography-scale: true;
  Use the framework's starter styles and make helper mixins and
  functions available.
 --------------------------------------------------------------*/
-@import "govuk-frontend/dist/govuk/all";
+@import "govuk-frontend/dist/govuk/index";
 
 
 /*--------------------------------------------------------------
