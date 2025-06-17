@@ -1,4 +1,20 @@
-.govuk-header__container .govuk-grid-column-one-third {
-    float: right;
+@media (min-width: 768px) {
+    .govuk-header__container {
+        display: flex;
+        align-items: center;
+    }
+
+    .govuk-header__container .govuk-grid-column-two-thirds {
+        float: right;
+    }
+
+    .govuk-header__container .govuk-button {
+        margin-bottom: 0px;
+    }
 }
 
+@media (max-width: 768px) {
+   .govuk-grid-column-two-thirds {
+       width: 100%;
+   }
+}
