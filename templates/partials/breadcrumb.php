@@ -4,7 +4,7 @@ global $post;
 
 $ancestors = array_reverse(get_post_ancestors($post->ID)); ?>
 <?php if (!is_front_page() && !is_search()) : ?>
-    <div class="govuk-breadcrumbs ">
+    <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
         <ol class="govuk-breadcrumbs__list">
                 <li class="govuk-breadcrumbs__list-item">
                     <a class="govuk-breadcrumbs__link" href="<?php echo get_site_url(); ?>"><?php _e('Home', 'govuk-theme') ?></a>
@@ -16,5 +16,5 @@ $ancestors = array_reverse(get_post_ancestors($post->ID)); ?>
                 <?php endforeach; ?>
                 <li class="govuk-breadcrumbs__list-item"><?php the_title() ?></li>       
         </ol>
-    </div>
+    </nav>
 <?php endif; ?>
