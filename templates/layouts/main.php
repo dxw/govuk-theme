@@ -8,7 +8,7 @@
 
     <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
 
-    <a href="#main-content" class="<?php echo apply_filters('govuk_theme_class', 'govuk-skip-link') ?>"><?php _e('Skip to main content', 'govuk-theme') ?></a>
+    <a href="#main-content" class="<?php echo apply_filters('govuk_theme_class', 'govuk-skip-link') ?>" data-module="govuk-skip-link"><?php _e('Skip to main content', 'govuk-theme') ?></a>
 
     <?php get_template_part('partials/global-header'); ?>
 
