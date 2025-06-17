@@ -1,4 +1,4 @@
-<header class="<?php echo apply_filters('govuk_theme_class', 'govuk-header') ?>" role="banner" data-module="govuk-header">
+<header class="<?php echo apply_filters('govuk_theme_class', 'govuk-header') ?>" data-module="govuk-header">
     <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__container govuk-width-container') ?>">
         <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__logo') ?>">
             <a href="<?php echo esc_url(home_url()) ?>" class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__link govuk-header__link--homepage') ?>">

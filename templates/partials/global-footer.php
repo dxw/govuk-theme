@@ -1,4 +1,4 @@
-<footer class="<?php echo apply_filters('govuk_theme_class', 'govuk-footer') ?>" role="contentinfo">
+<footer class="<?php echo apply_filters('govuk_theme_class', 'govuk-footer') ?>">
     <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-width-container') ?>">
         <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-footer__meta') ?>">
             <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-footer__meta-item govuk-footer__meta-item--grow') ?>">
