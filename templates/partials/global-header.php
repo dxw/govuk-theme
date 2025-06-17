@@ -31,7 +31,8 @@
                     <?php get_template_part('partials/search-form', '', ['id' => 'header-search-form']) ?>
                 </div>
             </div>
-            <?php get_template_part('partials/navigation') ?>
         </div>
     </div>
+
+    <?php get_template_part('partials/navigation') ?>
   </header>
