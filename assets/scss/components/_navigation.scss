@@ -1,11 +1,26 @@
-.govuk-header__navigation {
-    .menu-item {
-        @extend .govuk-header__navigation-item;
-        a {
-            @extend .govuk-header__link;
-        }
-    }
-    .current-menu-item {
-        @extend .govuk-header__navigation-item--active;
+/*
+ *    COMPONENT: SERVICE NAVIGATION
+ *
+ *    Table of contents
+ *
+ *    - Default styles
+ *
+ */
+.govuk-service-navigation li {
+    @extend .govuk-service-navigation__item;
+}
+
+.govuk-service-navigation li a {
+    @extend .govuk-service-navigation__link;
+}
+
+.govuk-service-navigation .current-menu-item {
+    @extend .govuk-service-navigation__item--active;
+}
+
+.govuk-service-navigation .sub-nav {
+    @extend .govuk-list--bullet;
+    @media (min-width: 640px) {
+        display: none;
     }
 }
