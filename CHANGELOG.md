@@ -6,12 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+- [Rebranded colour palette and assets](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#use-the-refreshed-govuk-brand-if-youre-not-using-nunjucks).
+- `data-module` to skip link, [to improve screen reader announcements](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#include-javascript-for-skip-link-to-improve-screen-reader-announcements).
+- Typography scale feature from govuk-frontend, as per [`govuk-frontend` recommendations](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#weve-adjusted-our-responsive-type-scale).
+
 ### Changed
-- Enable updated typography scale feature from govuk-frontend, as per [`govuk-frontend` recommendations](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#weve-adjusted-our-responsive-type-scale)
-- Add `data-module` to skip link, [to improve screen reader announcements](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#include-javascript-for-skip-link-to-improve-screen-reader-announcements).
-- Add `hidden` attribute to header menu button, [for compatibility with updated styles](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#add-the-hidden-attribute-to-the-mobile-menu-button-in-the-header-component).
+- Replace the header navigation with the new [service-navigation component](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#make-it-easier-to-navigate-complex-services-with-the-service-navigation-component).
 - Replace deprecated header class with `govuk-header__service-name`, [to reflect latest HTML markup](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#update-references-to-govuk-header__link--service-name-class-from-the-html-for-the-header-component).
-- Remove `X-UA-Compatible` meta tag, [as support for IE<11 has been dropped](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#remove-the-x-ua-compatible-meta-tag).
+- Replace the deprecated `govuk/all` with `govuk/index` as [`govuk-frontend` will remove the `all` files in the next major release](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#importing-layers-using-all-files).
+- Improve Breadcrumb accessibility by updating it to [use nav and aria-label](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#update-breadcrumbs-to-use-nav-and-aria-label).
 - Update the `<script>` snippet that appends classes to `<body>`, [to initiate `govuk-frontend` JS](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#update-the-script-snippet-at-the-top-of-your-body-tag).
 - Replace logo in site header, with Tudor crown.
 - Update copyright logo in site footer.
@@ -26,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Unused `node-normalize-scss` package.
 - Theme registration of jQuery.
 - Polyfill for CSS `calc()`.
+- `X-UA-Compatible` meta tag, [as support for IE<11 has been dropped](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#remove-the-x-ua-compatible-meta-tag).
 
 ## [v0.5.1] - 2024-08-08
 
