@@ -2,7 +2,7 @@
     <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-header') ?>" data-module="govuk-header">
         <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__container govuk-width-container') ?>">
             <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__logo') ?>">
-                <a href="<?php echo esc_url(home_url()) ?>" class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__link govuk-header__link--homepage') ?>">
+                <a href="<?php echo esc_url(home_url()) ?>" class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__homepage-link') ?>">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         focusable="false"
