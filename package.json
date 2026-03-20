@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "govuk-frontend": "^5.10.2"
+    "govuk-frontend": "^6.1.0"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
