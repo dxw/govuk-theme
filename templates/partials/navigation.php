@@ -7,7 +7,12 @@
           </a>
       </span>
       <nav aria-label="Menu" class="govuk-service-navigation__wrapper">
-        <button type="button" class="<?php echo apply_filters('govuk_theme_class', 'govuk-service-navigation__toggle govuk-js-service-navigation-toggle') ?>" aria-controls="header-navigation" hidden>
+        <button
+          type="button"
+          class="<?php echo apply_filters('govuk_theme_class', 'govuk-service-navigation__toggle govuk-js-service-navigation-toggle') ?>"
+          aria-hidden="true"
+          aria-controls="header-navigation"
+          hidden>
             <?php _e('Menu', 'govuk-theme') ?>
         </button>
         <?php
