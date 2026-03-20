@@ -31,11 +31,7 @@
                 </a>
             </div>
             <div class="<?php echo apply_filters('govuk_theme_class', 'govuk-header__content') ?>">
-                <div class="govuk-grid-row">
-                    <div class="govuk-grid-column-two-thirds">
-                        <?php get_template_part('partials/search-form', '', ['id' => 'header-search-form']) ?>
-                    </div>
-                </div>
+                <?php get_template_part('partials/search-form', '', ['id' => 'header-search-form']) ?>
             </div>
         </div>
 
