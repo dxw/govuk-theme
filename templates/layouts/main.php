@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes() ?> class="<?php echo apply_filters('govuk_theme_class', 'govuk-template--rebranded') ?>">
+<html <?php language_attributes() ?>>
 <head>
     <?php get_template_part('partials/head'); ?>
     <?php wp_head(); ?>

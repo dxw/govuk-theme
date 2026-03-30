@@ -9,19 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - [Rebranded colour palette and assets](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#use-the-refreshed-govuk-brand-if-youre-not-using-nunjucks).
 - `data-module` to skip link, [to improve screen reader announcements](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#include-javascript-for-skip-link-to-improve-screen-reader-announcements).
-- Typography scale feature from govuk-frontend, as per [`govuk-frontend` recommendations](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#weve-adjusted-our-responsive-type-scale).
 
 ### Changed
 - Replace the header navigation with the new [service-navigation component](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#make-it-easier-to-navigate-complex-services-with-the-service-navigation-component).
+  - Add `aria-hidden="true"` to service navigation button.
 - Replace deprecated header class with `govuk-header__service-name`, [to reflect latest HTML markup](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#update-references-to-govuk-header__link--service-name-class-from-the-html-for-the-header-component).
-- Replace the deprecated `govuk/all` with `govuk/index` as [`govuk-frontend` will remove the `all` files in the next major release](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#importing-layers-using-all-files).
+- Update header styling to account for search bar.
+- Replace the deprecated `govuk/all` with `govuk/index`, as [`govuk-frontend` will remove the `all` files in the next major release](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#importing-layers-using-all-files).
 - Improve Breadcrumb accessibility by updating it to [use nav and aria-label](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#update-breadcrumbs-to-use-nav-and-aria-label).
 - Update the `<script>` snippet that appends classes to `<body>`, [to initiate `govuk-frontend` JS](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#update-the-script-snippet-at-the-top-of-your-body-tag).
-- Replace logo in site header, with Tudor crown.
+- Replace logo in site header with Tudor Crown.
 - Update copyright logo in site footer.
 - Update favicons and align markup with [govuk-frontend recommendations](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#check-your-favicons-app-icons-and-opengraph-image-still-work).
-- Import govuk-frontend assets and Sass partials, from [updated location](https://github.com/alphagov/govuk-frontend/blob/main/CHANGELOG.md#update-package-file-paths-for-sass).
-- Update `govuk-frontend` to latest version; v5.10.2.
+- Update `govuk-frontend` to v6.1.
+- Update `dart-sass` to latest version.
 - Update `cpy-cli` to latest major version; v5.
 - Update `del-cli` to latest major version; v6.
 - Update `imagemin-cli` to latest major version; v8.
