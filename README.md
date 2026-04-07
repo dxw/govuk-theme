@@ -2,7 +2,7 @@
 
 A WordPress theme built by [dxw](https://dxw.com) that implements the [GOV.UK Design System](https://design-system.service.gov.uk/), via [GOV.UK Frontend](https://github.com/alphagov/govuk-frontend).
 
-Currently, the theme applies v3 of GOV.UK Frontend.
+Currently, the theme applies v6 of GOV.UK Frontend.
 
 ## Developing the theme
 
