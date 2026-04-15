@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Enable `core/file` block
 
+### Changed
+- Button blocks are styled as per the design system
+
 ## [v0.6.0] - 2026-04-07
 
 ### Added

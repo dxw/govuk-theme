@@ -1,0 +1,7 @@
+.wp-block-button__link {
+    @extend .govuk-button;
+}
+
+.wp-block-button {
+    @include govuk-responsive-margin(6, "bottom");
+}
