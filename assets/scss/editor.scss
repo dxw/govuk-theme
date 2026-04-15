@@ -46,6 +46,14 @@ $govuk-assets-path: '/wp-content/themes/govuk-theme/static/lib/govuk-frontend/di
 
 
 /*--------------------------------------------------------------
+# Blocks
+
+Overrides for Gutenburg blocks from WordPress Core.
+--------------------------------------------------------------*/
+@import "blocks/files";
+
+
+/*--------------------------------------------------------------
  # Layout objects
 
  These classes are all layout objects that don't impose any visual

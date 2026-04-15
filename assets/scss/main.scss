@@ -83,6 +83,14 @@ $govuk-assets-path: '/wp-content/themes/govuk-theme/static/lib/govuk-frontend/di
 
 
 /*--------------------------------------------------------------
+# Blocks
+
+Overrides for Gutenburg blocks from WordPress Core.
+--------------------------------------------------------------*/
+@import "blocks/files";
+
+
+/*--------------------------------------------------------------
  # Overrides
 
  These classes are for final adjustments, and should not be
