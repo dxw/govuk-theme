@@ -1,0 +1,18 @@
+.wp-block-file {
+    @include govuk-responsive-margin(6, "bottom");
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: govuk-spacing(4);
+
+    a:not(.wp-block-file__button) {
+        @extend .govuk-body;
+        @extend .govuk-link;
+        margin-bottom: 0;
+    }
+}
+
+.wp-block-file__button {
+    @extend .govuk-button;
+    margin-bottom: 0;
+}
