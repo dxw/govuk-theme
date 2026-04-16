@@ -16,7 +16,7 @@ wp.domReady(() => {
         // 'core/columns',
         'core/cover',
         // 'core/embed',
-        'core/file',
+        // 'core/file',
         'core/freeform',
         'core/gallery',
         // 'core/group',
