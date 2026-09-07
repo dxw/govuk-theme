@@ -20,7 +20,7 @@
         "dxw/phar-install": "^1.0",
         "mikey179/vfsstream": "^1.6",
         "dxw/php-cs-fixer-config": "^2.1",
-        "kahlan/kahlan": "^4.7"
+        "kahlan/kahlan": "^6.1"
     },
     "autoload": {
         "psr-4": {
