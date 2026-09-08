@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Button blocks are styled as per the design system
+- Bump `kahlan` to v`^6.1` to fix test suite errors.
 
 ## [v0.6.0] - 2026-04-07
 
