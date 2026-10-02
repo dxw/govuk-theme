@@ -7,11 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Enable `core/file` block
+- Enable `core/file` block.
 
 ### Changed
-- Button blocks are styled as per the design system
+- Button blocks are styled as per the design system.
 - Bump `kahlan` to v`^6.1` to fix test suite errors.
+- Print the inline body class script with `wp_print_inline_script_tag()` so CSP nonces can be applied.
 
 ## [v0.6.0] - 2026-04-07
 
