@@ -13,7 +13,7 @@
     ],
     "config": {
       "platform": {
-        "php": "8.2"
+        "php": "8.3"
       }
     },
     "require-dev": {
@@ -31,7 +31,7 @@
         "post-update-cmd": "vendor/bin/phar-install"
     },
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "dxw/iguana": "^1.4",
         "dxw/iguana-theme": "^1.0",
         "dxw/iguana-extras": "^1.0"
